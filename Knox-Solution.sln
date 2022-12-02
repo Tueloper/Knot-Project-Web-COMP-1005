@@ -5,6 +5,8 @@ VisualStudioVersion = 25.0.1705.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Knox-UI", "Knox-UI\Knox-UI.csproj", "{C64D1F19-2478-4132-B26F-C237F75D4708}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnoxAPI", "KnoxAPI\KnoxAPI.csproj", "{FA6AB377-8445-4862-8C97-0E3FD053B67B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C64D1F19-2478-4132-B26F-C237F75D4708}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C64D1F19-2478-4132-B26F-C237F75D4708}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C64D1F19-2478-4132-B26F-C237F75D4708}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA6AB377-8445-4862-8C97-0E3FD053B67B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA6AB377-8445-4862-8C97-0E3FD053B67B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA6AB377-8445-4862-8C97-0E3FD053B67B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA6AB377-8445-4862-8C97-0E3FD053B67B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
