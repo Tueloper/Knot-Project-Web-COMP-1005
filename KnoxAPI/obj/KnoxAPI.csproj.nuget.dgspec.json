@@ -1,26 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/Users/tochukwu/Projects/Knox-Solution/KnoxAPI/KnoxAPI.csproj": {}
+    "C:\\Users\\John_\\source\\repos\\Knot-Project-Web-COMP-1005\\KnoxAPI\\KnoxAPI.csproj": {}
   },
   "projects": {
-    "/Users/tochukwu/Projects/Knox-Solution/KnoxAPI/KnoxAPI.csproj": {
+    "C:\\Users\\John_\\source\\repos\\Knot-Project-Web-COMP-1005\\KnoxAPI\\KnoxAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/tochukwu/Projects/Knox-Solution/KnoxAPI/KnoxAPI.csproj",
+        "projectUniqueName": "C:\\Users\\John_\\source\\repos\\Knot-Project-Web-COMP-1005\\KnoxAPI\\KnoxAPI.csproj",
         "projectName": "KnoxAPI",
-        "projectPath": "/Users/tochukwu/Projects/Knox-Solution/KnoxAPI/KnoxAPI.csproj",
-        "packagesPath": "/Users/tochukwu/.nuget/packages/",
-        "outputPath": "/Users/tochukwu/Projects/Knox-Solution/KnoxAPI/obj/",
+        "projectPath": "C:\\Users\\John_\\source\\repos\\Knot-Project-Web-COMP-1005\\KnoxAPI\\KnoxAPI.csproj",
+        "packagesPath": "C:\\Users\\John_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\John_\\Source\\Repos\\Knot-Project-Web-COMP-1005\\KnoxAPI\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "E:\\Microsoft Visual Studio\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/tochukwu/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\John_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -63,7 +69,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
