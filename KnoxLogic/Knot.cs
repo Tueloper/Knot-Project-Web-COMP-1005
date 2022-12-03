@@ -1,9 +1,13 @@
 ﻿namespace KnoxLogic;
 public static class Knot
 {
-    public static string UserAccess(string username, string password)
+    public static string UserName(string username)
     {
-        return $"{username} and {password} is correct";
+        return username;
+    }
+    public static string UserPassword(string passwword)
+    {
+        return passwword;
     }
 }
 
