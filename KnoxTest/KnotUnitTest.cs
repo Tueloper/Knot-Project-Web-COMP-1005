@@ -1,7 +1,7 @@
 ﻿namespace KnoxTest;
 
 [TestClass]
-public class UnitTest1
+public class KnotUnitTest
 {
     [TestMethod]
     public void TestMethod1()
