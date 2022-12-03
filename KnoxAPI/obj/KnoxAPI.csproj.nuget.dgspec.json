@@ -11,7 +11,7 @@
         "projectName": "KnoxAPI",
         "projectPath": "C:\\Users\\John_\\source\\repos\\Knot-Project-Web-COMP-1005\\KnoxAPI\\KnoxAPI.csproj",
         "packagesPath": "C:\\Users\\John_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\John_\\Source\\Repos\\Knot-Project-Web-COMP-1005\\KnoxAPI\\obj\\",
+        "outputPath": "C:\\Users\\John_\\source\\repos\\Knot-Project-Web-COMP-1005\\KnoxAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "E:\\Microsoft Visual Studio\\NuGetPackages"
