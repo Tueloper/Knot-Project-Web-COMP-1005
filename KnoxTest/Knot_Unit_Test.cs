@@ -1,5 +1,7 @@
 ﻿using KnoxLogic.Responses;
 using FluentAssertions;
+using KnoxLogic.Validator;
+using KnoxLogic;
 
 namespace KnoxTest;
 
@@ -34,4 +36,20 @@ public class Knot_Unit_Test
         var finalResult = initialResult.ResponseMessage;
         finalResult.Should().Be("Success");
     }
+    [TestMethod]
+    public void CheckValidation()
+    {
+        var checkValidation = new Knot_SignUp_API_Validator();
+        Assert.IsTrue(checkValidation.ValidateAsync)
+    }
+    [TestMethod]
+    public void GenerateRandomNumber()
+    {
+        var randomNumber = Toolbox.generateId();
+        for(int i=0; i < 10; i++)
+        {
+           
+        }
+    }
+    public
 }
