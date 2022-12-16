@@ -1,0 +1,8 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "https://localhost:44433",
+"LaunchCommand": "npm start",
+"WorkingDirectory": "/Users/tochukwu/Projects/Knox-Solution/KnoxUI/ClientApp/",
+"MaxTimeoutInSeconds": "120"
+}
+}

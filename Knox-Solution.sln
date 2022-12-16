@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 25.0.1705.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Knox-UI", "Knox-UI\Knox-UI.csproj", "{C64D1F19-2478-4132-B26F-C237F75D4708}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnoxAPI", "KnoxAPI\KnoxAPI.csproj", "{FA6AB377-8445-4862-8C97-0E3FD053B67B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnoxTest", "KnoxTest\KnoxTest.csproj", "{934FEF85-BAC4-4052-BEF7-0E4C06017FAA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnoxLogic", "KnoxLogic\KnoxLogic.csproj", "{4AC3A3B2-0C20-411E-81A9-DB0EA5C34330}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnoxUI", "KnoxUI\KnoxUI.csproj", "{A613B53E-98B1-4514-88E0-CD1151DDD15C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C64D1F19-2478-4132-B26F-C237F75D4708}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C64D1F19-2478-4132-B26F-C237F75D4708}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C64D1F19-2478-4132-B26F-C237F75D4708}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C64D1F19-2478-4132-B26F-C237F75D4708}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FA6AB377-8445-4862-8C97-0E3FD053B67B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FA6AB377-8445-4862-8C97-0E3FD053B67B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA6AB377-8445-4862-8C97-0E3FD053B67B}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +29,10 @@ Global
 		{4AC3A3B2-0C20-411E-81A9-DB0EA5C34330}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4AC3A3B2-0C20-411E-81A9-DB0EA5C34330}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4AC3A3B2-0C20-411E-81A9-DB0EA5C34330}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A613B53E-98B1-4514-88E0-CD1151DDD15C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A613B53E-98B1-4514-88E0-CD1151DDD15C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A613B53E-98B1-4514-88E0-CD1151DDD15C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A613B53E-98B1-4514-88E0-CD1151DDD15C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
