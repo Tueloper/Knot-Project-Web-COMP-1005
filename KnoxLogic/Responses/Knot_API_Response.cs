@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace KnoxLogic.Responses
 {
-    public class APIResponse
+    public class Knot_API_Response
     {
         public string APIResponseMessage { get; set; }
         public bool IsAPIMessageSuccessful { get; set; }
     }
-    public class APIResponse<T> : APIResponse
+    public class APIResponse<T> : Knot_API_Response
     {
         public T Value { get; set; }
     }
