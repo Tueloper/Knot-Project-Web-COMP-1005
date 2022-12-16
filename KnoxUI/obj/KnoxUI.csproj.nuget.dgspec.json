@@ -1,26 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/Users/tochukwu/Projects/Knox-Solution/KnoxUI/KnoxUI.csproj": {}
+    "C:\\Users\\John_\\source\\repos\\Knot-Project-Web-COMP-1005\\KnoxUI\\KnoxUI.csproj": {}
   },
   "projects": {
-    "/Users/tochukwu/Projects/Knox-Solution/KnoxUI/KnoxUI.csproj": {
+    "C:\\Users\\John_\\source\\repos\\Knot-Project-Web-COMP-1005\\KnoxUI\\KnoxUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/tochukwu/Projects/Knox-Solution/KnoxUI/KnoxUI.csproj",
+        "projectUniqueName": "C:\\Users\\John_\\source\\repos\\Knot-Project-Web-COMP-1005\\KnoxUI\\KnoxUI.csproj",
         "projectName": "KnoxUI",
-        "projectPath": "/Users/tochukwu/Projects/Knox-Solution/KnoxUI/KnoxUI.csproj",
-        "packagesPath": "/Users/tochukwu/.nuget/packages/",
-        "outputPath": "/Users/tochukwu/Projects/Knox-Solution/KnoxUI/obj/",
+        "projectPath": "C:\\Users\\John_\\source\\repos\\Knot-Project-Web-COMP-1005\\KnoxUI\\KnoxUI.csproj",
+        "packagesPath": "C:\\Users\\John_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\John_\\source\\repos\\Knot-Project-Web-COMP-1005\\KnoxUI\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "E:\\Microsoft Visual Studio\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/tochukwu/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\John_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -38,40 +44,6 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "dependencies": {
-            "Microsoft.AspNetCore.ApiAuthorization.IdentityServer": {
-              "target": "Package",
-              "version": "[7.0.0, )"
-            },
-            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[7.0.0, )"
-            },
-            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[7.0.0, )"
-            },
-            "Microsoft.AspNetCore.Identity.UI": {
-              "target": "Package",
-              "version": "[7.0.0, )"
-            },
-            "Microsoft.AspNetCore.SpaProxy": {
-              "target": "Package",
-              "version": "[7.0.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.Relational": {
-              "target": "Package",
-              "version": "[7.0.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.Sqlite": {
-              "target": "Package",
-              "version": "[7.0.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "target": "Package",
-              "version": "[7.0.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -83,15 +55,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
