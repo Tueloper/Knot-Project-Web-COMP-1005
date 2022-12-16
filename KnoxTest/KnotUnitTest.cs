@@ -1,18 +1,37 @@
-﻿using KnoxLogic;
+﻿using KnoxLogic.Responses;
+using FluentAssertions;
 
 namespace KnoxTest;
 
-[TestClass]
+
 public class KnotUnitTest
 {
     [TestMethod]
-    public void TestUserCredentials()
+    public async Task IsSuccessTrue()
     {
-        string userName = "John";
-        string userPwd = "123";
-        string correctUserName = Knot.UserName("John");
-        string correctUserPassword = Knot.UserPassword("123");
-        Assert.AreEqual(userName, correctUserName);
-        Assert.AreEqual(userPwd, correctUserPassword);
+        var initialResult = new APIResponse();
+        var finalResult = initialResult.IsAPIMessageSuccessful;
+        finalResult.Should().Be(true);
+    }
+    [TestMethod]
+    public async Task IsError()
+    {
+        var initialResult = new ApiResponseError();
+        var finalResult = initialResult.IsResponseSuccessful;
+        finalResult.Should().Be(true);
+    }
+    [TestMethod]
+    public async Task DisplaySuccessMessage()
+    {
+        var initialResult = new APIResponse();
+        var finalResult = initialResult.APIResponseMessage;
+        finalResult.Should().Be("Success");
+    }
+    [TestMethod]
+    public async Task ErrorMessage()
+    {
+        var initialResult = new ApiResponseError();
+        var finalResult = initialResult.ResponseMessage;
+        finalResult.Should().Be("Success");
     }
 }
