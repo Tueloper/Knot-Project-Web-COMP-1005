@@ -109,7 +109,7 @@ namespace KnoxAPI.Controllers
             }
         }
 
-        [HttpGet]
+        [HttpPut]
         [Route("{id:int}")]
         public IActionResult UpdateNote(int id, NoteRequest updateNoteData)
         {
