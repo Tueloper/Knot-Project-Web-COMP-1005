@@ -11,7 +11,7 @@ using KnoxLogic.Models;
 
 namespace KnoxAPI.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class UserController : ControllerBase
     {
@@ -66,6 +66,7 @@ namespace KnoxAPI.Controllers
 
 
         [HttpGet]
+        [Route("{id:string")]
         public IActionResult Profile(string id)
         {
             var userObject = _dbContext.Users.Find(id);
