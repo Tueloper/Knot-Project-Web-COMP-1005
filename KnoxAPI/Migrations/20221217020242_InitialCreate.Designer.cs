@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace KnoxAPI.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20221217011518_InitialCreate")]
+    [Migration("20221217020242_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />

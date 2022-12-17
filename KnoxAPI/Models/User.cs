@@ -26,6 +26,6 @@ namespace KnoxLogic.Models
         [Required]
         public string? Password { get; set; }
 
-        public ICollection<Note>? Notes { get; set; }
+        public ICollection<Note>? Notess { get; set; }
     }
 }

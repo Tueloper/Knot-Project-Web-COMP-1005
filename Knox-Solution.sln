@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnoxTest", "KnoxTest\KnoxTe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnoxLogic", "KnoxLogic\KnoxLogic.csproj", "{4AC3A3B2-0C20-411E-81A9-DB0EA5C34330}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnoxUI", "KnoxUI\KnoxUI.csproj", "{A613B53E-98B1-4514-88E0-CD1151DDD15C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnoxUI", "KnoxUI\KnoxUI.csproj", "{3A9C0302-BA09-47AE-AFE6-04A3F212FBF8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +29,10 @@ Global
 		{4AC3A3B2-0C20-411E-81A9-DB0EA5C34330}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4AC3A3B2-0C20-411E-81A9-DB0EA5C34330}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4AC3A3B2-0C20-411E-81A9-DB0EA5C34330}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A613B53E-98B1-4514-88E0-CD1151DDD15C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A613B53E-98B1-4514-88E0-CD1151DDD15C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A613B53E-98B1-4514-88E0-CD1151DDD15C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A613B53E-98B1-4514-88E0-CD1151DDD15C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A9C0302-BA09-47AE-AFE6-04A3F212FBF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A9C0302-BA09-47AE-AFE6-04A3F212FBF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A9C0302-BA09-47AE-AFE6-04A3F212FBF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A9C0302-BA09-47AE-AFE6-04A3F212FBF8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
