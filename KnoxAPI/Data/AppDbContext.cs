@@ -11,9 +11,9 @@ namespace KnoxAPI.Data
 		{
 		}
 
-		public DbSet<User> Userss { get; set; }
+		public DbSet<User> Users { get; set; }
 
-        public DbSet<Note> Notess { get; set; }
+        public DbSet<Note> Notes { get; set; }
     }
 }
 

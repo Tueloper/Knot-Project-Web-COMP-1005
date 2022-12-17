@@ -29,7 +29,6 @@
     <None Remove="Models\DTO\User\" />
     <None Remove="Models\DTO\Note\" />
     <None Remove="Microsoft.EntityFrameworkCore.Sqlite" />
-    <None Remove="Migrations\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data\" />
@@ -38,7 +37,6 @@
     <Folder Include="Models\DTO\" />
     <Folder Include="Models\DTO\User\" />
     <Folder Include="Models\DTO\Note\" />
-    <Folder Include="Migrations\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\KnoxLogic\KnoxLogic.csproj">

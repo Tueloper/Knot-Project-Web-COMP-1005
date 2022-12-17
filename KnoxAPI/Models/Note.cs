@@ -26,8 +26,6 @@ namespace KnoxAPI.Models
         public DateTime LastModified { get; set; }
 
         public int? UserId { get; set; }
-
-        public User? User { get; set; }
     }
 }
 

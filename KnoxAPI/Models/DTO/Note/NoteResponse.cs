@@ -18,8 +18,6 @@ namespace KnoxAPI.Models.DTO.Note
         public DateTime LastModified { get; set; }
 
         public int? UserId { get; set; }
-
-        public User? User { get; set; }
     }
 }
 

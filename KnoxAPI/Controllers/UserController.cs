@@ -35,7 +35,7 @@ namespace KnoxAPI.Controllers
                     Password = userSignupData.Password
                 };
 
-                _dbContext.Userss.Add(user);
+                _dbContext.Users.Add(user);
                 _dbContext.SaveChanges();
 
                 return Ok(user);
@@ -46,7 +46,7 @@ namespace KnoxAPI.Controllers
         [HttpPost]
         public IActionResult Login(LoginUser userLoginData)
         {
-            var user = _dbContext.Userss.Find(userLoginData.Email);
+            var user = _dbContext.Users.Find(userLoginData.Email);
 
             if (user != null)
             {
@@ -61,9 +61,9 @@ namespace KnoxAPI.Controllers
 
         [HttpGet]
         [Route("{id:int}")]
-        public IActionResult Profile(string id)
+        public IActionResult Profile(int id)
         {
-            var userObject = _dbContext.Userss.Find(id);
+            var userObject = _dbContext.Users.Find(id);
 
             if (userObject != null)
             {
