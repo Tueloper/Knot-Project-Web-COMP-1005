@@ -29,19 +29,19 @@ namespace KnoxAPI.Controllers
         {
             try
             {
-                var user = _dbContext.Users.Find(addNoteData.UserId);
+                var user = _dbContext.Userss.Find(addNoteData.UserId);
 
                 if (user != null)
                 {
                     var noteData = new Note
                     {
-                        Id = KnoxLogic.Toolbox.generateId("note"),
+                        Id = KnoxLogic.Toolbox.generateId(),
                         Title = addNoteData.Title,
                         Description = addNoteData.Description,
                         UserId = addNoteData.UserId
                     };
 
-                    _dbContext.Notes.Add(noteData);
+                    _dbContext.Notess.Add(noteData);
                     _dbContext.SaveChanges();
 
                     return Ok(noteData);
@@ -65,7 +65,7 @@ namespace KnoxAPI.Controllers
         [HttpGet]
         public IActionResult GetAllNotes()
         {
-            var notes = _dbContext.Notes.ToList();
+            var notes = _dbContext.Notess.ToList();
 
             var notesDTO = new List<NoteResponse>();
 
@@ -89,10 +89,10 @@ namespace KnoxAPI.Controllers
 
 
         [HttpGet]
-        [Route("{id:string")]
+        [Route("{id:int}")]
         public IActionResult GetNoteById(string id)
         {
-            var noteObject = _dbContext.Notes.Find(id);
+            var noteObject = _dbContext.Notess.Find(id);
 
             if (noteObject != null)
             {
@@ -117,10 +117,10 @@ namespace KnoxAPI.Controllers
         }
 
         [HttpGet]
-        [Route("{id:string")]
+        [Route("{id:int}")]
         public IActionResult UpdateNote(string id, NoteRequest updateNoteData)
         {
-            var existingNote = _dbContext.Notes.Find(id);
+            var existingNote = _dbContext.Notess.Find(id);
 
             if (existingNote != null)
             {
@@ -139,14 +139,14 @@ namespace KnoxAPI.Controllers
         }
 
         [HttpGet]
-        [Route("{id:string")]
+        [Route("{id:int}")]
         public IActionResult DeleteNote(string id)
         {
-            var existingNote = _dbContext.Notes.Find(id);
+            var existingNote = _dbContext.Notess.Find(id);
 
             if (existingNote != null)
             {
-                _dbContext.Notes.Remove(existingNote);
+                _dbContext.Notess.Remove(existingNote);
 
                 _dbContext.SaveChanges();
 

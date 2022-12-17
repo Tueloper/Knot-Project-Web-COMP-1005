@@ -15,8 +15,7 @@ builder.Services.AddSwaggerGen();
 //var connectionString = builder.Configuration.GetConnectionString("NoteDb") ?? "Data Source=Note.db";
 //builder.Services.AddDbContext<AppDbContext>(connectionString);
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlite(connectionString));
+builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlite(connectionString));
 //builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 var app = builder.Build();

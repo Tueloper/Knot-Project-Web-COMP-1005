@@ -11,18 +11,11 @@ namespace KnoxLogic
             return num;
         }
 
-		public static string generateId(string constanty)
+		public static int generateId()
 		{
-            decimal randomNumber = Math.Round(Convert.ToDecimal(generateRandomValues(2, 89)) * 69 + 39);
+            int randomNumber = (int)Math.Round(Convert.ToDecimal(generateRandomValues(2, 89)) * 69 + 39);
 
-            string reference = constanty + "_" + randomNumber;
-
-            if (reference.Length > 5)
-            {
-                reference = reference.Substring(0, 5);
-            }
-
-            return reference;
+            return randomNumber;
         }
 	}
 }

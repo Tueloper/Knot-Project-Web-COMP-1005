@@ -14,18 +14,18 @@ namespace KnoxLogic.Models
     {
         [Key]
         [Required]
-        public string? Id { get; set; }
+        public int? Id { get; set; }
 
         [MaxLength(50)]
         public string? Name { get; set; }
 
         [EmailAddress]
         [Required]
-        public string? Email { get; set; }
+        public string Email { get; set; }
 
         [Required]
         public string? Password { get; set; }
 
-        public ICollection<Note> Notes { get; set; }
+        public ICollection<Note>? Notes { get; set; }
     }
 }
