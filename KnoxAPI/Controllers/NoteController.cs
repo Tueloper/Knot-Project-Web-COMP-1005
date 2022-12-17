@@ -27,16 +27,16 @@ namespace KnoxAPI.Controllers
         [HttpPost]
         public IActionResult AddNote(NoteRequest addNoteData)
         {
-            try
-            {
+  
                 var user = _dbContext.Users.Find(addNoteData.UserId);
 
                 if (user != null)
                 {
                     var noteData = new Note
                     {
-                        Id = KnoxLogic.Toolbox.generateId("note"),
+                        Id = KnoxLogic.Toolbox.generateId(),
                         Title = addNoteData.Title,
+                        Content = addNoteData.Content,
                         Description = addNoteData.Description,
                         UserId = addNoteData.UserId
                     };
@@ -52,12 +52,7 @@ namespace KnoxAPI.Controllers
                     return BadRequest();
                 }
                 
-            }
-            catch (Exception ex)
-            {
-                Response.StatusCode = 400;
-                return (IActionResult)ex;
-            }
+
 
         }
 
@@ -80,7 +75,6 @@ namespace KnoxAPI.Controllers
                     DateCreated = note.DateCreated,
                     LastModified = note.LastModified,
                     UserId = note.UserId,
-                    User = note.User
                 });
             }
 
@@ -89,8 +83,8 @@ namespace KnoxAPI.Controllers
 
 
         [HttpGet]
-        [Route("{id:string")]
-        public IActionResult GetNoteById(string id)
+        [Route("{id:int}")]
+        public IActionResult GetNoteById(int id)
         {
             var noteObject = _dbContext.Notes.Find(id);
 
@@ -105,7 +99,6 @@ namespace KnoxAPI.Controllers
                     DateCreated = noteObject.DateCreated,
                     LastModified = noteObject.LastModified,
                     UserId = noteObject.UserId,
-                    User = noteObject.User
                 };
 
                 return Ok(noteDTO);
@@ -117,8 +110,8 @@ namespace KnoxAPI.Controllers
         }
 
         [HttpGet]
-        [Route("{id:string")]
-        public IActionResult UpdateNote(string id, NoteRequest updateNoteData)
+        [Route("{id:int}")]
+        public IActionResult UpdateNote(int id, NoteRequest updateNoteData)
         {
             var existingNote = _dbContext.Notes.Find(id);
 
@@ -139,8 +132,8 @@ namespace KnoxAPI.Controllers
         }
 
         [HttpGet]
-        [Route("{id:string")]
-        public IActionResult DeleteNote(string id)
+        [Route("{id:int}")]
+        public IActionResult DeleteNote(int id)
         {
             var existingNote = _dbContext.Notes.Find(id);
 

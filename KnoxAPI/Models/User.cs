@@ -10,22 +10,17 @@ using KnoxAPI.Models;
 
 namespace KnoxLogic.Models
 {
-    public class User : IdentityUser
+    public class User
     {
-        [Key]
         [Required]
-        public string? Id { get; set; }
+        public int? Id { get; set; }
 
         [MaxLength(50)]
         public string? Name { get; set; }
 
         [EmailAddress]
-        [Required]
         public string? Email { get; set; }
 
-        [Required]
         public string? Password { get; set; }
-
-        public ICollection<Note> Notes { get; set; }
     }
 }

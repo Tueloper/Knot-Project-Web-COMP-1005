@@ -26,11 +26,10 @@ namespace KnoxAPI.Controllers
         [HttpPost]
         public IActionResult SignUp(SignupUser userSignupData)
         {
-            try
-            {
+
                 var user = new User
                 {
-                    Id = KnoxLogic.Toolbox.generateId("user"),
+                    Id = KnoxLogic.Toolbox.generateId(),
                     Name = userSignupData.Name,
                     Email = userSignupData.Email,
                     Password = userSignupData.Password
@@ -40,13 +39,7 @@ namespace KnoxAPI.Controllers
                 _dbContext.SaveChanges();
 
                 return Ok(user);
-            }
-            catch(Exception ex)
-            {
-                Response.StatusCode = 400;
-                return (IActionResult)ex;
-            }
-            
+
         }
 
 
@@ -58,7 +51,8 @@ namespace KnoxAPI.Controllers
             if (user != null)
             {
                 return Ok(user);
-            }else
+            }
+            else
             {
                 return BadRequest();
             }
@@ -66,8 +60,8 @@ namespace KnoxAPI.Controllers
 
 
         [HttpGet]
-        [Route("{id:string")]
-        public IActionResult Profile(string id)
+        [Route("{id:int}")]
+        public IActionResult Profile(int id)
         {
             var userObject = _dbContext.Users.Find(id);
 
@@ -87,5 +81,6 @@ namespace KnoxAPI.Controllers
                 return BadRequest();
             }
         }
+
     }
 }

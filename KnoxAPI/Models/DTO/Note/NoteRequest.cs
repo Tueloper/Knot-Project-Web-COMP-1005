@@ -9,7 +9,7 @@ namespace KnoxAPI.Models.DTO.Note
 
         public string? Description { get; set; }
 
-        public string? UserId { get; set; }
+        public int? UserId { get; set; }
     }
 }
 

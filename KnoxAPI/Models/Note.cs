@@ -12,7 +12,7 @@ namespace KnoxAPI.Models
 	public class Note
 	{
         [Key]
-        public string? Id { get; set; }
+        public int? Id { get; set; }
 
         [Required]
         public string? Title { get; set; }
@@ -25,9 +25,7 @@ namespace KnoxAPI.Models
 
         public DateTime LastModified { get; set; }
 
-        public string? UserId { get; set; }
-
-        public User? User { get; set; }
+        public int? UserId { get; set; }
     }
 }
 
