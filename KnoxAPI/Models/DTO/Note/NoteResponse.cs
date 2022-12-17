@@ -1,20 +1,12 @@
 ﻿using System;
 using KnoxLogic.Models;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Identity;
 
-namespace KnoxAPI.Models
+namespace KnoxAPI.Models.DTO.Note
 {
-	public class Note
+	public class NoteResponse
 	{
-        [Key]
         public string? Id { get; set; }
 
-        [Required]
         public string? Title { get; set; }
 
         public string? Content { get; set; }

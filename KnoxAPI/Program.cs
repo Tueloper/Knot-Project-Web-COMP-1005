@@ -1,5 +1,6 @@
 ﻿using KnoxAPI.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,10 +12,12 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 // connect database
+//var connectionString = builder.Configuration.GetConnectionString("NoteDb") ?? "Data Source=Note.db";
+//builder.Services.AddDbContext<AppDbContext>(connectionString);
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<AppDbContext>(options =>
-{
-    options.UseSqlServer(builder.Configuration.GetConnectionString("KnoxAppConnectionString"));
-});
+    options.UseSqlite(connectionString));
+//builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 var app = builder.Build();
 
